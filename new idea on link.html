@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Linking</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-size: x-large;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #dfd5d5;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: disc;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        .menu li {
+            margin-bottom: 10px;
+            display: grid;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Image Links</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our website! Check this technology image out:</p>
+        <a href="https://example.com/technology"><img src="https://c02.purpledshub.com/uploads/sites/41/2018/08/22-ideas-606ea9b.jpg?w=1029&webp=1" alt="Technology"></a>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <a href="https://example.com/nature"><img src="https://media.cntraveller.com/photos/611bf0b8f6bd8f17556db5e4/master/pass/gettyimages-1146431497.jpg" alt="Nature"></a>
+            <a href="https://example.com/nature"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZwH8QjB7k8wMKjzJ7gnrHGb1IHopW6VYLC_62sRgMXQ&s" alt="Nature"></a>
+            <a href="https://example.com/nature"><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" alt="Nature"></a>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="https://i.ytimg.com/vi/NRPEld34o2E/maxresdefault.jpg"><img src="food1_image.jpg" alt="Food 1"></a> Fried Rice</li>
+            <li><a href="https://allnigerianfoods.com/wp-content/uploads/jollof_rice_recipe1.jpg"><img src="food2_image.jpg" alt="Food 2"></a> Jellof Rice</li>
+            <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrQpbssJh7VpwaxKuaGGD5lj0tGTOzIH7FDa9EFUKt_w&s"><img src="food3_image.jpg" alt="Food 3"></a> Spagetti</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Image Links. All rights reserved.</p>
+    </footer>
+</body>
+</html>
